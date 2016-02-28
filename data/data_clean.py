@@ -59,8 +59,10 @@ def clean_novel(filename, subdir):
 		# # rejoin everything 
 		lines[:] = [' '.join(line) for line in lines]
 		new = ' '.join(lines).strip()
-		# condense all white space?
 		new = new.replace(' \n ', '\n')
+		new = re.sub('[-]-+', ' ', new) 	# removes >= 2 -
+		new = re.sub('[_*]', '', new)		# removes _
+		new = re.sub(' +', ' ', new)		# condenses spaces
 
 		# write to new file
 		folder =  os.path.basename(subdir)

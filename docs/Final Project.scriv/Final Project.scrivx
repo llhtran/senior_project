@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ScrivenerProject Version="1.5" Creator="SCRMAC-2.7.1-26120" Device="llhtran" Modified="2016-02-27 20:52:23 -0500" ModID="6D7040E2-70B4-4B47-A226-F6A6F18D0AB0">
+<ScrivenerProject Version="1.5" Creator="SCRMAC-2.7.1-26120" Device="llhtran" Modified="2016-02-28 03:28:30 -0500" ModID="6F9CB549-B299-4494-94EB-778E180FE6B5">
     <Binder>
         <BinderItem ID="20" UUID="1FC5E73E-9240-410A-A304-51111F6AE034" Type="Text" Created="2016-02-09 00:11:18 -0500" Modified="2016-02-09 00:11:18 -0500">
             <Title>About</Title>
@@ -18,14 +18,14 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem ID="29" UUID="71478FCC-492D-46E1-A04A-BAEC395F5F17" Type="Text" Created="2016-02-09 00:11:18 -0500" Modified="2016-02-25 02:41:23 -0500">
+                <BinderItem ID="29" UUID="71478FCC-492D-46E1-A04A-BAEC395F5F17" Type="Text" Created="2016-02-09 00:11:18 -0500" Modified="2016-02-28 03:27:59 -0500">
                     <Title>Cover</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>40,0</TextSelection>
+                        <TextSelection>68,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem ID="28" UUID="6011C9A2-1B91-4EA3-82A8-979DCBCB54E3" Type="Text" Created="2016-02-09 00:11:18 -0500" Modified="2016-02-25 02:42:57 -0500">
@@ -88,14 +88,14 @@
                         <TextSelection>30,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem ID="10" UUID="ECCD1B50-87E1-4BE0-941B-102DB80CF69A" Type="Text" Created="2016-02-09 00:11:18 -0500" Modified="2016-02-27 20:52:23 -0500">
+                <BinderItem ID="10" UUID="ECCD1B50-87E1-4BE0-941B-102DB80CF69A" Type="Text" Created="2016-02-09 00:11:18 -0500" Modified="2016-02-28 03:28:29 -0500">
                     <Title>References</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>455,0</TextSelection>
+                        <TextSelection>179,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -126,14 +126,14 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem ID="31" UUID="79B47500-29E0-4E38-9CA7-37C1D2FDFF25" Type="Text" Created="2016-02-25 01:43:02 -0500" Modified="2016-02-25 02:58:15 -0500">
+                <BinderItem ID="31" UUID="79B47500-29E0-4E38-9CA7-37C1D2FDFF25" Type="Text" Created="2016-02-25 01:43:02 -0500" Modified="2016-02-28 03:27:27 -0500">
                     <Title>Plan</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                         <NotesTextSelection>0,0</NotesTextSelection>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>401,0</TextSelection>
+                        <TextSelection>434,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -234,7 +234,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-07-07 07:29:31 -0400" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" ResetType="Midnight" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="10" Characters="75" Date="2016-02-27 01:13:05 -0500"></PreviousSession>
+        <PreviousSession Words="18" Characters="168" Date="2016-02-28 02:58:22 -0500"></PreviousSession>
     </ProjectTargets>
     <PrintSettings PaperSize="612.0,792.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScrivenerProject>
