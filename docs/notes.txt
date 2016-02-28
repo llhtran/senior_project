@@ -1,0 +1,3 @@
+install caffe on the zoo
+do i need permissions to install stuff?
+tmux

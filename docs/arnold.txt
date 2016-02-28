@@ -1,0 +1,7 @@
+Big goal: style writing according to some author
+Small steps: authorship attribution 
+Goal: Learn ML and apply it to a cool problem
+-> REFERENCES?
+-> There has already been some work in this field, WHAT SHOULD I DO?
+Software: Caffe is a pain to install
+-> CAN I USE THEANO? HOW SHOULD I APPROACH USING THEANO?

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="10">
+            <Title>References</Title>
+            <Text>References
+Insert your references here. This includes pretty much everything read that has informed your research design. Make sure you use the format recommended by your discipline or organization. These examples are in Chicago.
+
+RD Bullard, Dumping in Dixie: Race, Class, and Environmental Quality (Westview Pr, 2000).
+RD Bullard, “Environmental Justice in the 21st Century: Race Still Matters,” Phylon (1960-) (2001): 151-71.
+RL Bunch, and RE Lloyd, “The Cognitive Load of Geographic Information,” The Professional Geographer 58, no. 2 (2006): 209-20.
+M Checker, Polluted Promises: Environmental Racism and the Search for Justice in a Southern Town (NYU Press, 2005).
+M Granovetter, “The Strength of Weak Ties: A Network Theory Revisited,” Sociological theory 1 (1983): 201-33.
+MS Granovetter, “The Strength of Weak Ties,” The American Journal of Semiotics 78, no. 6 (1973): 1360.
+JK Jung, and S Elwood, “Extending the Qualitative Capabilities of GIS: Computer-Aided Qualitative Gis,” Transactions in GIS 14, no. 1 (2010): 63-87.
+MP Kwan, and G Ding, “Geo-Narrative: Extending Geographic Information Systems for Narrative Analysis in Qualitative and Mixed-Method Research,” The Professional Geographer 60, no. 4 (2008): 443-65.
+
+
+</Text>
+        </Document>
+        <Document ID="31">
+            <Title>Plan</Title>
+            <Text>DATA PROCESSING
+Clean data of UTF-8 / weird punctuations
+	How is this done? 
+		Delete all lines with “Chapter” in them
+		
+Clean up data into chunks of 5-sentence paragraphs.
+
+Convert them into vectors by:
+	Pairs of part-of-speech tags
+		Learn how to do this with spaCy
+	Function words
+		Write a script for this
+	N-grams
+		How to do this?
+
+Generate correct data column
+
+Stacking and hierarchical models
+
+
+</Text>
+        </Document>
+        <Document ID="26">
+            <Title>Resources</Title>
+        </Document>
+        <Document ID="11">
+            <Title>Budget</Title>
+            <Text>Budget
+This should be as detailed as possible but simple to understand. A simple table with line items should suffice. Any descriptions or justifications can be done below the table.
+
+Line Item
+Amount
+
+
+
+
+
+
+Total
+
+
+</Text>
+        </Document>
+        <Document ID="27">
+            <Title>Notes &amp; Questions</Title>
+            <Text>Questions for Arnold
+- Bag of words? 
+
+
+Questions for Angluin</Text>
+        </Document>
+        <Document ID="5">
+            <Title>Future Implications</Title>
+            <Text>Importance of the Project
+The importance of the research including what makes your research unique and/or the specific contribution you seek to make.</Text>
+        </Document>
+        <Document ID="12">
+            <Title>Conclusion</Title>
+            <Text>Conclusions
+(To be determined)</Text>
+        </Document>
+        <Document ID="6">
+            <Title>Implementation and Experiments</Title>
+            <Text>Implementation and Experiments
+Part of Speech Bigrams &amp; Principle Components
+Top Lemmas &amp; Principle Components
+
+
+
+Notes: 
+- The bigger question that we want to ask: We want to be able to train a model and let it classify previous unseen texts. How do we make use of the principle components that we observe? </Text>
+        </Document>
+        <Document ID="28">
+            <Title>Abstract</Title>
+            <Text>Abstract
+
+Authorship attribution is the problem of analyzing and characterizing an individual’s writing style in order to determine the most likely author for an unlabeled body of natural language text. In recent years, the problem has been approached from a statistical angle by employing deep learning techniques. This senior project aims to explore various, potentially deep, learning models to solve the authorship attribution in conjunction with a number of linguistic methods in order to understand what governs writing style and what features play significant roles in distinguishing different authors. In addition, it hopes to preliminarily evaluate the efficiency-complexity trade-off of deep learning models against traditional probabilistic approaches often used in linguistics. 
+
+
+Research
+- Tutorials (MNIST in Python)
+- Word representation: word2vec, n-grams (whatever humanities in R talked about…)
+- Existing methods
+
+Implementation
+- Preprocessing in spaCy
+- Simple probabilistic models
+- Deep learning attempts
+
+Technologies used
+Python 2 &amp; 3
+Caffe
+Gutenberg Project
+Theano
+
+
+
+
+
+
+Insert the abstract here. The abstract should summarize your research in clear and concise language. You should write your abstract with the idea that it may be the only section that will actually be read and the sole representation of your research. 
+
+Some primary factors that you should consider for the abstract:
+
+Motivation: Why do we care?
+Problem statement: What are you trying to address?
+Approach: How will you address the problem?
+Results: What is the answer or expected answer?
+Conclusions: What are the implications?</Text>
+            <Notes>The abstract should summarize your research in clear and concise language. You should write your abstract with the idea that it may be the only section that will actually be read and the sole representation of your research. 
+
+Some primary factors that you should consider for the abstract:
+
+Motivation: Why do we care?
+Problem statement: What are you trying to address?
+Approach: How will you address the problem?
+Results: What is the answer or expected answer?
+Conclusions: What are the implications?</Notes>
+        </Document>
+        <Document ID="13">
+            <Title>Method of Approach</Title>
+            <Text>Method of Approach
+The research methodology you will employ including location, data collection techniques, analysis techniques, etc.</Text>
+        </Document>
+        <Document ID="7">
+            <Title>Research</Title>
+            <Text>Research
+
+The senior project consists of two distinct parts. 
+
+Learning basic technologies
+MNIST tutorial in Python
+Tutorial in Theano
+spaCy
+
+
+Representing features
+One challenging aspect of natural language processing is choosing a good way to quantify language numerically. This necessity arises from the fact that learning models deal exclusively with numerical vectors and matrices in order to “learn” features. Language and style, on the other hand, is completely devoid of numbers. 
+
+Data collection
+One of machine learning’s greatest bottlenecks is data availability. Machine learning methods are only applicable to problems that 1) have patterns that are difficult to detect and quantify and 2) have ample amounts of meaningful data. This is especially true for supervised learning: a pattern cannot to learned and classified without at least thousands of examples of data points and their correct evaluation. Therefore, although the project utilizes 
+
+Pre-processing
+Texts had to be trimmed to contain only the text—no titles, Gutenberg notes, etc. The text also originally came in UTF-8 format, which required filtering to ASCII to reduce noise for the next pre-processing step. In addition, all non-alphabetical, numerical and punctuation characters were removed. How to deal with Shakespeare’s plays e.g. [Exuent.]?
+
+Note
+The project utilizes Project Gutenberg’s texts from exclusively English-speaking authors to avoid unquantifiable variations in style due to translation by different translators. </Text>
+        </Document>
+        <Document ID="30">
+            <Title>Style Guidelines</Title>
+            <Text>The following web resources may be of use as style guidelines when putting together your proposal:
+
+http://www.chicagomanualofstyle.org/tools_citationguide.html
+https://owl.english.purdue.edu/owl/resource/717/01/
+https://owl.english.purdue.edu/owl/resource/747/1/
+https://owl.english.purdue.edu/owl/resource/560/1/</Text>
+        </Document>
+        <Document ID="18">
+            <Title>Misc</Title>
+        </Document>
+        <Document ID="29">
+            <Title>Cover</Title>
+            <Text>Final Project:
+Deep Learning in Authorship Attribution
+
+Lien Tran
+B.S. Computer Science
+Department of Computer Science
+Yale University
+
+
+
+
+Thesis Advisor
+
+______________________________________
+Professor Dana Angluin
+
+
+DUS of Department of Computer Science
+
+______________________________________
+Professor Zhong Shao
+
+______________________________________
+Professor James Aspnes
+
+
+
+
+
+
+
+&lt;$longdate&gt;</Text>
+        </Document>
+        <Document ID="8">
+            <Title>Background</Title>
+            <Text>Background
+
+Authorship attribution has been examined extensively in the past under the field of stylometry. </Text>
+        </Document>
+        <Document ID="20">
+            <Title>About</Title>
+            <Text>THESIS PROPOSAL TEMPLATE
+
+About
+This template is designed to produce a standard 15-page research or thesis proposal. Bear in mind, however, that your department or the organisation to which you are submitting a proposal may have specific formatting requirements - it’s always best to check.
+
+How To Use This Template
+	•	Rename the Draft folder in the binder to the title of your proposal (when you first create the project, you will notice that the Draft folder has been given the temporary name “&lt;Proposal Title&gt;”).
+	•	Edit the files inside the Draft folder to fill in your proposal.
+	•	Use File &gt; Compile… to compile your proposal ready for printing or export. The Compile settings have been set up appropriately, so you only need to change them if you wish to tweak things.
+
+Author
+This project template was created and kindly donated by Robert Brimhall, who is in no way affiliated with Literature &amp; Latte.
+
+Final Note
+Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template and you can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template.</Text>
+        </Document>
+        <Document ID="19">
+            <Title>Research Steps</Title>
+            <Text>Steps for Research Design
+	1.	Frame the question you wish to ask  
+	2.	Find the appropriate data to answer the question
+	3.	Choose the analytical method appropriate to answer question
+	4.	Process the data using the chosen method
+	5.	Review and question the results (refining the approach by collecting more data and improving the analysis)
+	6.	Present your results using the appropriate media</Text>
+        </Document>
+    </Documents>
+</SearchIndexes>
