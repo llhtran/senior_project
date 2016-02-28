@@ -12,7 +12,7 @@ import os
 # add lowercasing? but spaCy probably takes care of that
 
 def is_chapter(line):
-	if len(line) == 2:
+	if len(line) >= 2:
 		if line[0].lower() == "chapter":
 			return True
 	return False
@@ -28,8 +28,7 @@ def is_newline(line):
 		return True
 	return False
 
-def clean_novel(filename):
-	print filename
+def clean_novel(filename, subdir):
 	with open(filename, 'r+') as openfile:
 	# 	print(sys.argv[1])
 		# s = openfile.read().replace('\n', ' ')
@@ -59,21 +58,31 @@ def clean_novel(filename):
 
 		# # rejoin everything 
 		lines[:] = [' '.join(line) for line in lines]
-		new = ' '.join(lines)
+		new = ' '.join(lines).strip()
+		# condense all white space?
 		new = new.replace(' \n ', '\n')
 
 		# write to new file
+		folder =  os.path.basename(subdir)
+		fn = os.path.basename(filename)
+		new_filename = "PROCESSED" + "/" + folder + "/" + fn
+		out = open(new_filename, 'w')
 		# out = open("output.txt", 'w')
-		# out.write(new)
+		out.write(new)
 
 		# write back to file
-		openfile.seek(0)
-		openfile.write(new)
+		# openfile.seek(0)
+		# openfile.write(new)
+
+# clean_novel()
 
 rootdir = sys.argv[1]
 for subdir, dirs, files in os.walk(rootdir):
-    for file in files:
-        print os.path.join(subdir, file)
+	for file in files:
+		if file[0] != '.':
+			filename = os.path.join(subdir, file)
+			clean_novel(filename, subdir)
+
 
 
 

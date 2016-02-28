@@ -1,15 +1,3 @@
-A TALE OF TWO CITIES
-
-A STORY OF THE FRENCH REVOLUTION
-
-By Charles Dickens
-
-Book the First--Recalled to Life
-
-
-
-
-I. The Period
 
 
 It was the best of times,
@@ -115,7 +103,7 @@ roads that lay before them.
 
 
 
-II. The Mail
+
 
 
 It was the Dover road that lay, on a Friday night late in November,
@@ -369,7 +357,6 @@ Jerry!"
 
 
 
-III. The Night Shadows
 
 
 A wonderful fact to reflect upon, that every human creature is
@@ -554,7 +541,7 @@ Creator of day! To be buried alive for eighteen years!"
 
 
 
-IV. The Preparation
+
 
 
 When the mail got successfully to Dover, in the course of the forenoon,
@@ -1048,7 +1035,7 @@ consider it.
 
 
 
-V. The Wine-shop
+
 
 
 A large cask of wine had been dropped and broken, in the street. The
@@ -1499,7 +1486,7 @@ busy, making shoes.
 
 
 
-VI. The Shoemaker
+
 
 
 "Good day!" said Monsieur Defarge, looking down at the white head that
@@ -1981,7 +1968,7 @@ Book the Second--the Golden Thread
 
 
 
-I. Five Years Later
+
 
 
 Tellson's Bank by Temple Bar was an old-fashioned place, even in the
@@ -2235,7 +2222,7 @@ rust here!"
 
 
 
-II. A Sight
+
 
 
 "You know the Old Bailey well, no doubt?" said one of the oldest of
@@ -2511,7 +2498,7 @@ axe, and hammer the nails into the scaffold.
 
 
 
-III. A Disappointment
+
 
 
 Mr. Attorney-General had to inform the jury, that the prisoner before
@@ -3102,7 +3089,7 @@ search of other carrion.
 
 
 
-IV. Congratulatory
+
 
 
 From the dimly-lighted passages of the court, the last sediment of the
@@ -3392,7 +3379,7 @@ table, and a long winding-sheet in the candle dripping down upon him.
 
 
 
-V. The Jackal
+
 
 
 Those were drinking days, and most men drank hard. So very great is
@@ -3655,7 +3642,7 @@ on him, and resigning himself to let it eat him away.
 
 
 
-VI. Hundreds of People
+
 
 
 The quiet lodgings of Doctor Manette were in a quiet street-corner not
@@ -4192,7 +4179,7 @@ bearing down upon them, too.
 
 
 
-VII. Monseigneur in Town
+
 
 
 Monseigneur, one of the great lords in power at the Court, held his
@@ -4532,7 +4519,6 @@ things ran their course.
 
 
 
-VIII. Monseigneur in the Country
 
 
 A beautiful landscape, with the corn bright in it, but not abundant.
@@ -4779,7 +4765,7 @@ of his chateau was opened to him.
 
 
 
-IX. The Gorgon's Head
+
 
 
 It was a heavy mass of building, that chateau of Monsieur the Marquis,
@@ -5280,7 +5266,7 @@ was a frill of paper, on which was scrawled:
 
 
 
-X. Two Promises
+
 
 
 More months, to the number of twelve, had come and gone, and Mr. Charles
@@ -5639,7 +5625,7 @@ work, were all as usual.
 
 
 
-XI. A Companion Picture
+
 
 
 "Sydney," said Mr. Stryver, on that self-same night, or morning, to his
@@ -5820,7 +5806,7 @@ kind of thing for _you_. Now think of it, Sydney."
 
 
 
-XII. The Fellow of Delicacy
+
 
 
 Mr. Stryver having made up his mind to that magnanimous bestowal of good
@@ -6119,7 +6105,7 @@ was lying back on his sofa, winking at his ceiling.
 
 
 
-XIII. The Fellow of No Delicacy
+
 
 
 If Sydney Carton ever shone anywhere, he certainly never shone in the
@@ -6326,7 +6312,7 @@ He said, "Farewell!" said a last "God bless you!" and left her.
 
 
 
-XIV. The Honest Tradesman
+
 
 
 To the eyes of Mr. Jeremiah Cruncher, sitting on his stool in
@@ -6760,9 +6746,6 @@ himself: "Jerry, you honest tradesman, there's hopes wot that boy will
 yet be a blessing to you, and a recompense to you for his mother!"
 
 
-
-
-XV. Knitting
 
 
 There had been earlier drinking than usual in the wine-shop of Monsieur
@@ -7236,10 +7219,6 @@ you would set upon the birds of the finest feathers; would you not?"
 a wave of her hand towards the place where they had last been apparent;
 "now, go home!"
 
-
-
-
-XVI. Still Knitting
 
 
 Madame Defarge and monsieur her husband returned amicably to the
@@ -7739,8 +7718,6 @@ counting dropping heads.
 
 
 
-XVII. One Night
-
 
 Never did the sun go down with a brighter glory on the quiet corner in
 Soho, than one memorable evening when the Doctor and his daughter sat
@@ -7947,9 +7924,6 @@ of the plane-tree moved upon his face, as softly as her lips had moved
 in praying for him.
 
 
-
-
-XVIII. Nine Days
 
 
 The marriage-day was shining brightly, and they were ready outside the
@@ -8224,7 +8198,6 @@ the dusk of the ninth evening.
 
 
 
-XIX. An Opinion
 
 
 Worn out by anxious watching, Mr. Lorry fell asleep at his post. On the
@@ -8554,7 +8527,7 @@ crime.
 
 
 
-XX. A Plea
+
 
 
 When the newly-married pair came home, the first person who appeared, to
@@ -8725,7 +8698,7 @@ have parted from his lips for the first time--
 
 
 
-XXI. Echoing Footsteps
+
 
 
 A wonderful corner for echoes, it has been remarked, that corner where
@@ -9195,8 +9168,6 @@ stained red.
 
 
 
-XXII. The Sea Still Rises
-
 
 Haggard Saint Antoine had had only one exultant week, in which to soften
 his modicum of hard and bitter bread to such extent as he could, with
@@ -9412,7 +9383,7 @@ Antoine's bosom.
 
 
 
-XXIII. Fire Rises
+
 
 
 There was a change on the village where the fountain fell, and where
@@ -9699,10 +9670,6 @@ The altitude of the gallows that would turn to water and quench it,
 no functionary, by any stretch of mathematics, was able to calculate
 successfully.
 
-
-
-
-XXIV. Drawn to the Loadstone Rock
 
 
 In such risings of fire and risings of sea--the firm earth shaken by
@@ -10188,14 +10155,6 @@ floated away for the Loadstone Rock.
 
 
 The end of the second book.
-
-
-
-
-
-Book the Third--the Track of a Storm
-
-
 
 
 I. In Secret
@@ -11922,7 +11881,7 @@ tremble so. I have saved him."
 
 
 
-VII. A Knock at the Door
+
 
 
 "I have saved him." It was not another of the dreams in which he had
@@ -12156,7 +12115,7 @@ answered to-morrow. Now, I am dumb!"
 
 
 
-VIII. A Hand at Cards
+
 
 
 Happily unconscious of the new calamity at home, Miss Pross threaded her
@@ -12717,9 +12676,6 @@ into the dark room here, and let us have one final word alone."
 
 
 
-IX. The Game Made
-
-
 While Sydney Carton and the Sheep of the prisons were in the adjoining
 dark room, speaking so low that not a sound was heard, Mr. Lorry looked
 at Jerry in considerable doubt and mistrust. That honest tradesman's
@@ -13274,7 +13230,6 @@ follows.
 
 
 
-X. The Substance of the Shadow
 
 
 "I, Alexandre Manette, unfortunate physician, native of Beauvais, and
@@ -13903,7 +13858,7 @@ Conciergerie, and Death within four-and-twenty hours!
 
 
 
-XI. Dusk
+
 
 
 The wretched wife of the innocent man thus doomed to die, fell under
@@ -14082,7 +14037,7 @@ And walked with a settled step, down-stairs.
 
 
 
-XII. Darkness
+
 
 
 Sydney Carton paused in the street, not quite decided where to go. "At
@@ -14464,7 +14419,7 @@ Farewell.
 
 
 
-XIII. Fifty-two
+
 
 
 In the black prison of the Conciergerie, the doomed of the day awaited
@@ -15021,7 +14976,7 @@ us; but, so far, we are pursued by nothing else.
 
 
 
-XIV. The Knitting Done
+
 
 
 In that same juncture of time when the Fifty-Two awaited their fate
@@ -15552,7 +15507,6 @@ And indeed she never did.
 
 
 
-XV. The Footsteps Die Out For Ever
 
 
 Along the Paris streets, the death-carts rumble, hollow and harsh. Six
@@ -15753,7 +15707,6 @@ on of many footsteps in the outskirts of the crowd, so that it swells
 forward in a mass, like one great heave of water, all flashes away.
 Twenty-Three.
 
-        *****
 
 They said of him, about the city that night, that it was the
 peacefullest man's face ever beheld there. Many added that he looked
