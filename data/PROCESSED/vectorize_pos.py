@@ -1,3 +1,5 @@
+# practice code for counting all tag pairs in a novel
+
 from spacy.en import English
 import sys
 
@@ -15,11 +17,10 @@ for tag1 in tags:
 nlp = English()
 openfile = open("austen/emma.txt", 'r+')
 s = openfile.read()
-print s[0:30]
 u = unicode(s, "utf-8")
 
 # processed unicode string
-pu = nlp(s)
+pu = nlp(u)
 
 # turn string into array of tags
 pos_tags = [str(token.pos_) for token in pu]
@@ -28,7 +29,7 @@ pos_tags = [str(token.pos_) for token in pu]
 d = dict.fromkeys(tag_pairs, 0)
 
 # count consecutive pairs of tags for each category
-pairs = [tag1+'-'+tag2 from tag1, tag2 in zip(pos_tags[:-1], pos_tags[1:])]
+pairs = [tag1+'-'+tag2 for tag1, tag2 in zip(pos_tags[:-1], pos_tags[1:])]
 
 for pair in pairs:
 	d[pair] += 1
