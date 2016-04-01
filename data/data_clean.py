@@ -50,7 +50,7 @@ def clean_novel(filename, subdir):
 			if is_newline(line):
 				flag = True
 				while flag:
-					if is_newline(lines[i+1]):
+					if i+1 < len(lines) and is_newline(lines[i+1]):
 						lines.remove(lines[i+1])
 					else:
 						line.append('\n')

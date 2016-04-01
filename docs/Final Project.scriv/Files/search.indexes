@@ -4,6 +4,17 @@
         <Document ID="10">
             <Title>References</Title>
             <Text>References
+
+NNs &amp; Deep Learning http://neuralnetworksanddeeplearning.com 
+POS tags http://universaldependencies.org/ru/pos/all.html#al-ru-pos/
+spaCy: https://spacy.io/ 
+spaCy tutorials:
+http://textminingonline.com/getting-started-with-spacy
+
+
+
+
+
 Insert your references here. This includes pretty much everything read that has informed your research design. Make sure you use the format recommended by your discipline or organization. These examples are in Chicago.
 
 RD Bullard, Dumping in Dixie: Race, Class, and Environmental Quality (Westview Pr, 2000).
@@ -20,11 +31,7 @@ MP Kwan, and G Ding, “Geo-Narrative: Extending Geographic Information Systems 
         </Document>
         <Document ID="31">
             <Title>Plan</Title>
-            <Text>DATA PROCESSING
-Clean data of UTF-8 / weird punctuations
-	How is this done? 
-		Delete all lines with “Chapter” in them
-		
+            <Text>DATA PROCESSING		
 Clean up data into chunks of 5-sentence paragraphs.
 
 Convert them into vectors by:
@@ -39,7 +46,17 @@ Generate correct data column
 
 Stacking and hierarchical models
 
-
+spaCy functions:
+	Tokenize
+	Sentence segmentation
+	Lemmatize
+	Part-of-speech tagging
+	Named Entity Recognizer
+	Noun chunk
+	Word vectors
+	
+Read the Neural Algorithm of Artistic Style and apply to text
+Parse Hemingway: if doesn’t end with PUNCT, then turn \n to space
 </Text>
         </Document>
         <Document ID="26">
@@ -68,8 +85,14 @@ Total
             <Text>Questions for Arnold
 - Bag of words? 
 
+Questions for Angluin
 
-Questions for Angluin</Text>
+
+RandomForest score: 1.0
+SVM score: 1.0
+This can’t be right…
+
+</Text>
         </Document>
         <Document ID="5">
             <Title>Future Implications</Title>
@@ -84,8 +107,13 @@ The importance of the research including what makes your research unique and/or 
         <Document ID="6">
             <Title>Implementation and Experiments</Title>
             <Text>Implementation and Experiments
-Part of Speech Bigrams &amp; Principle Components
-Top Lemmas &amp; Principle Components
+
+The project aims to experiment with a variety of machine learning models and datasets in order to elucidate what governs writing style in a number of distinguished classical English-speaking authors. 
+
+I wrote Python scripts for pre-processing text data into vectors and matrices of representing linguistic structures with the help of Matthew Hannibal’s spaCy library. The machine learning models came from Python’s scikit library, and I wrote the scripts for configuring the data and models as I experiment with them.
+
+Part of Speech Bigrams &amp; Random Forests
+Part of Speech Bigrams &amp; SVMs
 
 
 
@@ -152,18 +180,30 @@ The senior project consists of two distinct parts.
 
 Learning basic technologies
 MNIST tutorial in Python
-Tutorial in Theano
+Tutorial in Theano?
 spaCy
 
 
 Representing features
 One challenging aspect of natural language processing is choosing a good way to quantify language numerically. This necessity arises from the fact that learning models deal exclusively with numerical vectors and matrices in order to “learn” features. Language and style, on the other hand, is completely devoid of numbers. 
 
-Data collection
-One of machine learning’s greatest bottlenecks is data availability. Machine learning methods are only applicable to problems that 1) have patterns that are difficult to detect and quantify and 2) have ample amounts of meaningful data. This is especially true for supervised learning: a pattern cannot to learned and classified without at least thousands of examples of data points and their correct evaluation. Therefore, although the project utilizes 
+Data collection and preprocessing
+One of machine learning’s greatest bottlenecks is data availability. Machine learning methods are only applicable to problems that 1) have patterns that are difficult to detect and quantify and 2) have ample amounts of meaningful data. This is especially true for supervised learning: a pattern cannot to learned and classified without at least thousands of examples of data points and their correct evaluation. 
+
+Fortunately, there are a large number of literary works in the English language that is available to the public for free online. The project specifically utilizes novels by various authors obtained from Project Gutenberg, personal collections and other legal resources. [INSERT AUTHORS] That said, the collected data is in every way unsuited for any kind of learning. Machine learning models take purely numerical data in the form of vectors and matrices. Therefore, a significant amount of pre-processing was required to turn literary texts into workable data. 
+
+
+Authors used
+Jane Austen
+Charles Dickens
+Mark Twain
 
 Pre-processing
-Texts had to be trimmed to contain only the text—no titles, Gutenberg notes, etc. The text also originally came in UTF-8 format, which required filtering to ASCII to reduce noise for the next pre-processing step. In addition, all non-alphabetical, numerical and punctuation characters were removed. How to deal with Shakespeare’s plays e.g. [Exuent.]?
+Texts first had to be trimmed to contain only text—no titles, Gutenberg notes, excess space, etc…In other words, entities that were not characteristic of writing style. The Gutenberg texts originally came in UTF-8 format, which required filtering to ASCII in order to facilitate pre-processing with Python. All non-alphabetical, numerical and punctuation characters were removed. The text is then reverted to UTF-8 in order to feed into a commercial Python natural language processing package called spaCy. 
+
+The texts considered came in two categories: prose and plays. Prose underwent an number of filters to eliminate particular formatting, such as underscores for emphasis, multiple newlines, excess white spaces, volume and chapter demarcations, illustration footnotes. Plays underwent the same procedure, with an added layer of complication: Names of characters in the text which signified the speaker had to be removed. Unlike the rest of the content, which included lines and scene descriptions, these names did not contribute to the writing style, and came in such prolific numbers that they were highly likely to interfere with style-related information. 
+
+In addition,  How to deal with Shakespeare’s plays e.g. [Exuent.]?
 
 Note
 The project utilizes Project Gutenberg’s texts from exclusively English-speaking authors to avoid unquantifiable variations in style due to translation by different translators. </Text>
@@ -185,7 +225,7 @@ https://owl.english.purdue.edu/owl/resource/560/1/</Text>
             <Text>Final Project:
 Deep Learning in Authorship Attribution
 
-Lien Tran
+Lien Le Hong Tran
 B.S. Computer Science
 Department of Computer Science
 Yale University
@@ -219,7 +259,19 @@ Professor James Aspnes
             <Title>Background</Title>
             <Text>Background
 
-Authorship attribution has been examined extensively in the past under the field of stylometry. </Text>
+Authorship attribution has been examined extensively in the past under the field of stylometry. 
+
+Character features
+Lexical / Word tokens
+Syntactic
+Semantic
+
+Application: determine authorship, both for literary works and plagiarism
+
+Field has matured to the point researchers are no longer looking for solutions; they are looking for efficient solutions. Eg StankoHsuLu
+
+
+</Text>
         </Document>
         <Document ID="20">
             <Title>About</Title>
