@@ -11,7 +11,7 @@
 from spacy.en import English
 import pandas as pd 
 
-def novel_to_df(filename): 
+def novel_to_pos_df(filename): 
 	# because there's no documented way of doing this...
 	tags = ['ADJ', 'ADP', 'ADV', 'AUX', 'CONJ', 'DET', 'INTJ', 'NOUN', 'NUM', 'X', 
 			'PART', 'PRON', 'PROPN', 'PUNCT', 'SCONJ', 'SYM', 'VERB', 'EOL', 'SPACE']
@@ -31,25 +31,27 @@ def novel_to_df(filename):
 	# processed unicode string
 	pu = nlp(u)
 
-	# turn string into array of tags
-	pos_tags = [str(token.pos_) for token in pu]
-
 	# creating a dictionary for effective counting
 	d = {key: [] for key in tag_pairs}
 
-	ten_sents = []
+	ten_sents = [] # contains chunks of 10 sentences or less
 	chunk = []
+	# for every sentence in the text
 	for i, sent in enumerate(pu.sents):
+		# if it's the 10th, 20th, etc, then start new chunk
+		# else just add it to the current chunk
 		if i%10 == 0:
 			chunk = []
 		chunk.append(sent)
+		# if it's the last sentence of a chunk, then add chunk to ten_sents
 		if i%10 == 9:
 			ten_sents.append(chunk)
+	# edge case: when sentences run out, add whatever chunk is left
 	if chunk:
 		ten_sents.append(chunk)
 
 	for chunk in ten_sents:
-		# truning each chunk into a pure text chunk again
+		# turning each chunk into a pure text chunk again
 		text_chunk = [unicode(str(sen), "utf-8") for sen in chunk]
 		text_chunk = ''.join(text_chunk)
 		# process sentence again

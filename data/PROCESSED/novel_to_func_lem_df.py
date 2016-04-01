@@ -11,10 +11,10 @@
 from spacy.en import English
 import pandas as pd 
 
-def novel_to_func_df(filename): 
+def novel_to_func_lem_df(filename): 
 	# get list of function words
 	func_file = open("function+words.txt", 'r')
-	fws = openfile.read().lower().split()
+	fws = func_file.read().lower().split()
 	fws = [word for word in fws if '\'' not in word]
 
 	nlp = English()
