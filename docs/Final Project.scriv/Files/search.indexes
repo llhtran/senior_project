@@ -11,7 +11,8 @@ spaCy: https://spacy.io/
 spaCy tutorials:
 http://textminingonline.com/getting-started-with-spacy
 
-
+Original inspiration
+http://www.dailymail.co.uk/sciencetech/article-3214634/The-algorithm-learn-copy-artist-Neural-network-recreate-snaps-style-Van-Gogh-Picasso.html
 
 
 
@@ -29,35 +30,15 @@ MP Kwan, and G Ding, “Geo-Narrative: Extending Geographic Information Systems 
 
 </Text>
         </Document>
-        <Document ID="31">
-            <Title>Plan</Title>
-            <Text>DATA PROCESSING		
-Clean up data into chunks of 5-sentence paragraphs.
-
-Convert them into vectors by:
-	Pairs of part-of-speech tags
-		Learn how to do this with spaCy
-	Function words
-		Write a script for this
-	N-grams
-		How to do this?
-
-Generate correct data column
-
-Stacking and hierarchical models
-
-spaCy functions:
-	Tokenize
-	Sentence segmentation
-	Lemmatize
-	Part-of-speech tagging
-	Named Entity Recognizer
-	Noun chunk
-	Word vectors
-	
-Read the Neural Algorithm of Artistic Style and apply to text
-Parse Hemingway: if doesn’t end with PUNCT, then turn \n to space
-</Text>
+        <Document ID="19">
+            <Title>Research Steps</Title>
+            <Text>Steps for Research Design
+	1.	Frame the question you wish to ask  
+	2.	Find the appropriate data to answer the question
+	3.	Choose the analytical method appropriate to answer question
+	4.	Process the data using the chosen method
+	5.	Review and question the results (refining the approach by collecting more data and improving the analysis)
+	6.	Present your results using the appropriate media</Text>
         </Document>
         <Document ID="26">
             <Title>Resources</Title>
@@ -87,12 +68,13 @@ Total
 
 Questions for Angluin
 
+Function words:
+Very gender-based esp. For Austen and Dickens. Twain not so much. 
 
-RandomForest score: 1.0
-SVM score: 1.0
-This can’t be right…
 
-</Text>
+For rnns:
+- Word-level training?
+- Can we train on part-of-speech tags, generate tags, and then attach words to them? </Text>
         </Document>
         <Document ID="5">
             <Title>Future Implications</Title>
@@ -115,7 +97,10 @@ I wrote Python scripts for pre-processing text data into vectors and matrices of
 Part of Speech Bigrams &amp; Random Forests
 Part of Speech Bigrams &amp; SVMs
 
-
+Austen char_rnn: 3.9MB
+th train.lua -data_dir data/austen -rnn_size 200 -num_layers 2 -dropout 0.5
+Twain char_rnn: 3.3MB
+th train.lua -data_dir data/twain -rnn_size 200 -num_layers 2 -dropout 0.5 
 
 Notes: 
 - The bigger question that we want to ask: We want to be able to train a model and let it classify previous unseen texts. How do we make use of the principle components that we observe? </Text>
@@ -130,18 +115,20 @@ Authorship attribution is the problem of analyzing and characterizing an individ
 Research
 - Tutorials (MNIST in Python)
 - Word representation: word2vec, n-grams (whatever humanities in R talked about…)
-- Existing methods
+- Linguistic methods: Continuous bag-of-word, skip grams, n-grams
+- Machine learning methods: SVMs, random forests, siamese networks, convolutional networks, recurrent networks, neural style effect, language models
 
 Implementation
 - Preprocessing in spaCy
-- Simple probabilistic models
-- Deep learning attempts
+- Random forests and SVMs
+- Char_rnn
+- 
 
 Technologies used
 Python 2 &amp; 3
-Caffe
 Gutenberg Project
 Theano
+Torch and Lua 
 
 
 
@@ -180,7 +167,6 @@ The senior project consists of two distinct parts.
 
 Learning basic technologies
 MNIST tutorial in Python
-Tutorial in Theano?
 spaCy
 
 
@@ -205,6 +191,14 @@ The texts considered came in two categories: prose and plays. Prose underwent an
 
 In addition,  How to deal with Shakespeare’s plays e.g. [Exuent.]?
 
+Authorship attribution
+
+
+Text generation according to style
+
+
+
+
 Note
 The project utilizes Project Gutenberg’s texts from exclusively English-speaking authors to avoid unquantifiable variations in style due to translation by different translators. </Text>
         </Document>
@@ -223,7 +217,7 @@ https://owl.english.purdue.edu/owl/resource/560/1/</Text>
         <Document ID="29">
             <Title>Cover</Title>
             <Text>Final Project:
-Deep Learning in Authorship Attribution
+Authorship Attribution, Natural Language Generation, and Beyond
 
 Lien Le Hong Tran
 B.S. Computer Science
@@ -291,15 +285,37 @@ This project template was created and kindly donated by Robert Brimhall, who is 
 Final Note
 Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template and you can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template.</Text>
         </Document>
-        <Document ID="19">
-            <Title>Research Steps</Title>
-            <Text>Steps for Research Design
-	1.	Frame the question you wish to ask  
-	2.	Find the appropriate data to answer the question
-	3.	Choose the analytical method appropriate to answer question
-	4.	Process the data using the chosen method
-	5.	Review and question the results (refining the approach by collecting more data and improving the analysis)
-	6.	Present your results using the appropriate media</Text>
+        <Document ID="31">
+            <Title>Plan</Title>
+            <Text>DATA PROCESSING		
+Clean up data into chunks of 5-sentence paragraphs.
+
+Convert them into vectors by:
+	Pairs of part-of-speech tags
+		Learn how to do this with spaCy
+	Function words
+		Used this list of function words: 
+		http://myweb.tiscali.co.uk/wordscape/museum/funcword.html
+		Write a script for this
+	N-grams
+		How to do this?
+
+Generate correct data column
+
+Stacking and hierarchical models
+
+spaCy functions:
+	Tokenize
+	Sentence segmentation
+	Lemmatize
+	Part-of-speech tagging
+	Named Entity Recognizer
+	Noun chunk
+	Word vectors
+	
+Read the Neural Algorithm of Artistic Style and apply to text
+Parse Hemingway: if doesn’t end with PUNCT, then turn \n to space
+</Text>
         </Document>
     </Documents>
 </SearchIndexes>

@@ -15,7 +15,10 @@ I wrote Python scripts for pre-processing text data into vectors and matrices of
 Part of Speech Bigrams & Random Forests\
 Part of Speech Bigrams & SVMs\
 \
-\
+Austen char_rnn: 3.9MB\
+th train.lua -data_dir data/austen -rnn_size 200 -num_layers 2 -dropout 0.5\
+Twain char_rnn: 3.3MB\
+th train.lua -data_dir data/twain -rnn_size 200 -num_layers 2 -dropout 0.5 \
 \
 Notes: \
 - The bigger question that we want to ask: We want to be able to train a model and let it 

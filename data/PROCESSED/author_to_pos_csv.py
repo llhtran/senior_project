@@ -1,3 +1,8 @@
+# CPSC 490 2015-16
+# Senior Project
+# Advisor: Professor Dana Angluin
+# Author: Lien Tran, Yale College Class of 2016
+
 import os
 import sys
 import pandas as pd

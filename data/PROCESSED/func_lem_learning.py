@@ -1,3 +1,8 @@
+# CPSC 490 2015-16
+# Senior Project
+# Advisor: Professor Dana Angluin
+# Author: Lien Tran, Yale College Class of 2016
+
 import sys
 import argparse
 import numpy as np
@@ -15,14 +20,19 @@ austen = pd.read_csv("austen_func_lem.csv")
 twain = pd.read_csv("twain_func_lem.csv")
 dickens = pd.read_csv("dickens_func_lem.csv")
 
+austen_pred = 0
+twain_pred = 0
+dickens_pred = 1
+
 austen_drop = austen.drop(['Unnamed: 0'], 1)
 twain_drop = twain.drop(['Unnamed: 0'], 1)
 dickens_drop = dickens.drop(['Unnamed: 0'], 1)
 
-print("Distinguish Dickens")
-austen_drop['type']=0
-twain_drop['type']=0
-dickens_drop['type']=1
+print("Distinguish AUSTEN %d; TWAIN %d; DICKENS %d; - FUNC" % 
+		(austen_pred, twain_pred, dickens_pred))
+austen_drop['type']= austen_pred
+twain_drop['type']= twain_pred
+dickens_drop['type']= dickens_pred
 
 frames = [austen_drop, twain_drop, dickens_drop]
 all_authors = pd.concat(frames)
@@ -45,12 +55,33 @@ for pair in s:
 	print(pair)
 
 svm = svm.SVC()
-svm.fit(X_test, Y_test)
+svm.fit(X_train, Y_train)
 predsvm = svm.predict(X_test)
 score = metrics.accuracy_score(Y_test, predsvm)
 print "SVM ", score
 
+print("Predicting generated data")
+austen_gen = pd.read_csv("gen_samples/austen_sample_func.csv")
+twain_gen = pd.read_csv("gen_samples/twain_sample_func.csv")
+dickens_gen = pd.read_csv("gen_samples/dickens_sample_func.csv")
+austen_gen_drop = austen_gen.drop(['Unnamed: 0'], 1)
+twain_gen_drop = twain_gen.drop(['Unnamed: 0'], 1)
+dickens_gen_drop = dickens_gen.drop(['Unnamed: 0'], 1)
 
+austen_gen_drop['type']= austen_pred
+twain_gen_drop['type']= twain_pred
+dickens_gen_drop['type']= dickens_pred
+
+frames = [austen_gen_drop, twain_gen_drop, dickens_gen_drop]
+all_gen = pd.concat(frames)
+
+X_gen_test = all_gen.drop(['type'], 1)
+Y_gen_test = all_gen['type']
+
+gen_score = metrics.accuracy_score(Y_gen_test, rf.predict(X_gen_test))
+print "Random Forest predict generated data: ", gen_score
+gen_score = metrics.accuracy_score(Y_gen_test, svm.predict(X_gen_test))
+print "SVM predict generated data: ", gen_score
 
 # principal component analysis
 # x = (X - np.mean(X, 0)) / np.std(X, 0)
